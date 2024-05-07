@@ -1,0 +1,7 @@
+RewriteEngine on
+allow from 192.168.1.7
+RewriteRule “admin" "?controller=Admin&action=index"
+RewriteCond %{HTTP_HOST} !^localhost$
+RewriteRule ^(.*)$ http://localhost/Mohinhwebsitemvc2 [R=301]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
