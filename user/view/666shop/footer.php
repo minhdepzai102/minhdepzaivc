@@ -108,7 +108,7 @@
 
             if (query.length > 1) { // Tìm kiếm sau khi có ít nhất 3 ký tự
                 $.ajax({
-                    url: 'http://localhost/Mohinhwebsitemvc2/user/view/666shop/search.php', // Đường dẫn đúng
+                    url: 'http://localhost/Mohinhwebsitemvc2/minhdepzaivc/user/view/666shop/search.php', // Đường dẫn đúng
                     type: 'GET', // Kiểm tra phương thức
                     data: { keyword: query }, // Đảm bảo dữ liệu được truyền đúng
                     dataType: 'json', // Mong đợi phản hồi dạng JSON
